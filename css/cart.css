@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+form {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="file"],
+form input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #357abd;
+}
+
+.product-list {
+    flex: 2 1 600px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    gap: 20px;
+    position: relative;
+}
+
+.product-item img {
+    width: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-item div {
+    flex-grow: 1;
+}
+
+.product-item h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.product-item p {
+    margin: 2px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.product-item form {
+    margin: 0;
+}
+
+.product-item button {
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.product-item button:hover {
+    background-color: #c0392b;
+}
